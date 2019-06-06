@@ -1,15 +1,25 @@
+ 
 ###############################################
-hnorep-igsc-2019-xps 
+IGSC_2019_XPS
 ###############################################
 
-This is an image that runs a CloudSim experiment of no replication in a Three Tier Fat Tree architecture. This experiment runs on the input parameters given by experience/input/Var_XP_1.csv. This image is linked to the article published here : 
+This git contains 5 folders, one for each experiment :
+    - Boru et al.   : BORU_IGSC_XP
+    - HNoRep        : HNOREP_IGSC_XP
+    - MORM          : MORM_IGSC_XP
+    - P2PNoRep      : NOREP_IGSC_XP
+    - PEPR          : PEPR_IGSC_XP
+
+These experiments are discussed in the following paper :
+
+This permits to everyone to reproduce our experiments in our environment. 
 
 ################## 
 SETUP
 ##################
 
-To run this image, you just have to pull the image, and run the container. 
-This will run a java jar, and then writes all the outputs in experience/output/
+To use these docker containers, you have to create an image based on one folder. And then run this image. 
+This will create within the container, in the experience folder, a folder called output. You will just have to copy data from this folder on your computer.
 
 ##################
 MODIFICATION
@@ -23,7 +33,7 @@ Also, this should be noted that, the number of VM is unlimited, but, the network
 DOWNLOAD
 ##################
 
-This image contains everything needed to run this Three Tier Fat Tree absence of replication experiment
+With this git you have all the images to run all the experiments.
 
 ##################
 Authors
