@@ -1,0 +1,40 @@
+###############################################
+morm-igsc-2019-xps 
+###############################################
+
+This is an image that runs a CloudSim experiment of MORM strategy. This experiment runs on the input parameters given by experience/input/Var_XP_1.csv. This image is linked to the article published here : 
+
+################## 
+SETUP
+##################
+
+To run this image, you just have to pull the image, and run the container. 
+This will run a java jar, and then writes all the outputs in experience/output/
+
+##################
+MODIFICATION
+##################
+
+You can change all the values in the input parameters file.
+However, the number of file is limited to 67 200, due to automatic filename generation in the application. 
+Also, this should be noted that, the number of VM is unlimited, but, the network matrixes creation time is exponential. So the more VMs there is, the more time you will have to wait before the begining of the experiment. 
+Furthermore, MORM is processing a matrix to manage all the data. The size of the matrix is (nbVMs, nbFiles). So the more file and Vms you have, the more it will take time to process. 
+
+##################
+DOWNLOAD
+##################
+
+This image contains everything needed to run MORM experiment
+
+##################
+Authors
+##################
+Morgan Seguela : 
+Jean-Marc Pierson :
+Riad Mokade :
+
+##################
+Publications
+##################
+
+
